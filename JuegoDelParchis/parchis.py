@@ -4,7 +4,7 @@ class Parchis:
     TAM_TABLERO = 20
     dado1 = 0
     dado2 = 0
-    
+
     def __init__(self, nomJ1, nomJ2):
         self.fichaJ1 = 0
         self.fichaJ2 = 0
