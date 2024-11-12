@@ -1,4 +1,4 @@
-from codigoDeBarras import codigoDeBarras
+from CodigoDeBarras.codigoDeBarras import codigoDeBarras
 
 
 def test_codigoDeBarras1():

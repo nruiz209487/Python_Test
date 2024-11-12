@@ -1,4 +1,4 @@
-from encriptacion_mensaje import encriptacion_mensaje
+from Encriptacion.encriptacion_mensaje import encriptacion_mensaje
 
 def test_encriptacion_mensaje():
     assert encriptacion_mensaje('hola',0)=='hola'
