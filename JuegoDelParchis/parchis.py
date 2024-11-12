@@ -33,18 +33,22 @@ class Parchis:
                 self.fichaJ2 = Parchis.TAM_TABLERO - casillasPasadas
 
     def estadoCarrera(self):
+        res=""
         if self.fichaJ1 > self.fichaJ2:
-            return "Va ganando el jugador 1"
+            res= "Va ganando el jugador 1"
         elif self.fichaJ1 < self.fichaJ2:
-            return "Va ganando el jugador 2"
+            res= "Va ganando el jugador 2"
         else:
-            return "Empate"
+            res= "Empate"
+        return res
 
     def esGanador(self):
+        res=""
         if self.fichaJ1 == Parchis.TAM_TABLERO:
-            return f"El ganador es {self.nomJ1}"
+            res= "El ganador es {self.nomJ1}"
         elif self.fichaJ2 == Parchis.TAM_TABLERO:
-            return f"El ganador es {self.nomJ2}"
+            res= "El ganador es {self.nomJ2}"
         else:
-            return "Aún no hay ganador"
+            res= "Aún no hay ganador"
+        return res
 
