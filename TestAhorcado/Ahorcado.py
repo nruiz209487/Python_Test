@@ -8,7 +8,7 @@ class Ahorcado:
     def __init__(self):
         self.palabraSecreta = ""
         self.palabraPista = ""
-        self.noAcertadas =[]
+        self.noAcertadas =[""]
 
    
     def  generaPalabra(self):
@@ -17,8 +17,16 @@ class Ahorcado:
 
         
     def  compruebaLetra(self,letra):
-        return
+        letra=letra.lower()
+
+        if (letra not in  self.palabraSecreta):
+            self.noAcertadas.append(letra)
+
+
+
     def  compruebaPalabra(self,palabraIntento):
-        return
+        palabraIntento=palabraIntento.lower()
+        if(palabraIntento in Ahorcado.Palabras):
+             self.palabraPista=palabraIntento
 
         
