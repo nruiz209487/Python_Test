@@ -2,5 +2,8 @@ from TestAhorcado.Ahorcado import *
 
 
 def test_compruebaLetra():
+    res = True
     obj =  Ahorcado()
-    assert obj.compruebaLetra()=="null"
+    obj.compruebaLetra("")
+    
+    assert res

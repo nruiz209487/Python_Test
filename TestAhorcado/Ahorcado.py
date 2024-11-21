@@ -12,10 +12,13 @@ class Ahorcado:
 
    
     def  generaPalabra(self):
+        numero = random.randint(0, len(Ahorcado.Palabras)-1)
+        self.palabraSecreta = Ahorcado.Palabras[numero]
+
+        
+    def  compruebaLetra(self,letra):
         return
-    def  compruebaLetra(self):
-        return
-    def  compruebaPalabra(self):
+    def  compruebaPalabra(self,palabraIntento):
         return
 
         

@@ -1,5 +1,7 @@
 from TestAhorcado.Ahorcado import *
 
 def test_generaPalabra():
-    obj =  Ahorcado()
-    assert obj.generaPalabra()=="null"
+    obj = Ahorcado()
+    obj.generaPalabra()
+    res = obj.palabraSecreta in Ahorcado.Palabras
+    assert res
