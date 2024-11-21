@@ -6,7 +6,7 @@ def main():
     juego = Parchis(nomJ1, nomJ2)
     turno = 1
     
-    while (juego.esGanador()!= "El ganador es " +juego.nomJ1 and  juego.esGanador()!= "El ganador es " +juego.nomJ2) :
+    while (juego.esGanador()!=juego.nomJ1 and  juego.esGanador()!=juego.nomJ2) :
         input("Presione Enter para continuar...")
         print(f"Turno del jugador {turno}: {juego.nomJ1 if turno == 1 else juego.nomJ2}")
         suma_dados = juego.tirarDados()
@@ -19,7 +19,7 @@ def main():
         print(juego.pintaTablero())
         if Parchis.dado1 != Parchis.dado2:
             turno = 2 if turno == 1 else 1
-    print(juego.esGanador())
+    print( "Ha ganao " +juego.esGanador())
 
 if __name__ == "__main__":
     main()

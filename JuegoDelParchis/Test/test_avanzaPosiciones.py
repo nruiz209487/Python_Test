@@ -25,4 +25,4 @@ def test_avanzaPosicionesMayorQueTablero():
     avance = 5 
     objetoParchis.tirarDados = lambda: avance   # SUstitulle el tirar dados (si le he tenido que preguntar a chatgpt como realizar esto)
     objetoParchis.avanzaPosiciones("Jug1") 
-    assert objetoParchis.fichaJ1 == (Parchis.TAM_TABLERO - (18 + 5 - Parchis.TAM_TABLERO))
+    assert objetoParchis.fichaJ1 == 17

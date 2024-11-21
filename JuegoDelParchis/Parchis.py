@@ -64,7 +64,7 @@ class Parchis:
     def esGanador(self):
         res=""
         if self.fichaJ1 == Parchis.TAM_TABLERO:
-            res=  + self.nomJ1
+            res=  self.nomJ1
         elif self.fichaJ2 == Parchis.TAM_TABLERO:
             res=  self.nomJ2
         else:
